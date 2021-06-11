@@ -1,0 +1,9 @@
+{
+    "name": "emerson/icatalogo_mvc",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "App\\": "App/"
+        }
+    }
+}

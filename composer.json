@@ -1,5 +1,5 @@
 {
-    "name": "emerson/icatalogo_mvc",
+    "name": "emerson/icatalogo_MVC",
     "require": {},
     "autoload": {
         "psr-4": {
@@ -7,3 +7,4 @@
         }
     }
 }
+

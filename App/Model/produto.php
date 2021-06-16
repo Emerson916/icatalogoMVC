@@ -1,35 +1,27 @@
 <?php
 
-namespace App\Model;
+
 
 use App\Core\Model;
 
-class produto{
+class Produto {
+
     public $id;
     public $descricao;
-    public $quantidade;
     public $peso;
     public $tamanho;
+    public $quantidade;
     public $cor;
     public $valor;
-    public $imagem;
     public $desconto;
-
-    private $conexao;
-
-    public function getConexao(){
-        $this->conexao = new \PDO("mysql:host=localhost;port=3306;dbname=icatalogo;", "root", "bcd127");
-    
-        return $this->conexao;
-    }
-
+    public $imagem;
 
     public function listarTodos(){
         $sql = " SELECT p.*, c.descricao as categoria FROM tbl_produto p
                  INNER JOIN tbl_categoria c ON p.categoria_id = c.id ORDER BY p.id DESC ";
 
         //preparamos a consulta
-        $stmt = $this->getConexao()->prepare($sql);
+        $stmt = Model::getConexao()->prepare($sql);
         //executamos a consulta
         $stmt->execute();
 
@@ -44,5 +36,5 @@ class produto{
             return [];
         }
     }
+
 }
-?>

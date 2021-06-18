@@ -23,7 +23,7 @@ class Router{
         }else{
             //Se não existir e houver um controller na url
             //exibimos página não encontrada
-            echo "Opá, meu chapa, Página não encontrada!!";
+           $this->controller = "erro404";
         }
         
         //importamos o controller

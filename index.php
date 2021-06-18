@@ -2,9 +2,9 @@
 
     require("./vendor/autoload.php");
 
-    use \App\Model\produto;
+    use \App\Model\Produto;
 
-    $produtoModel = new produto();
+    $produtoModel = new Produto();
 
    $lista = $produtoModel->listarTodos();
 

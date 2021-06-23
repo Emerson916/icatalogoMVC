@@ -1,5 +1,5 @@
 <div class="categorias-container">
-    <form class="form-categorias" method="POST" action="/categorias/update/<?= $dados-> $id ?>">
+    <form class="form-categorias" method="POST" action="/categorias/update/<?= $dados->id ?>">
 
         <ul>
             <?php
@@ -20,7 +20,7 @@
         <h1 class="span2">Editar Categorias</h1>
         <div class="input-group span2">
             <label for="descricao">Descricao</label>
-            <input type="text" name="descricao" id="descricao" value="<?= $dados->descricao ?>" />
+            <input type="text" name="descricao" id="descricao" value=" <?= $dados->descricao ?> " />
         </div>
         <button type="button" onclick="javascript: window.location.href = '/categorias'">
             Cancelar

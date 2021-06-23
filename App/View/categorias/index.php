@@ -37,7 +37,7 @@ foreach ($dados as $categoria) {
     }
 
     function editarCategoria(id){
-        window.location = `/categorias/edit/${id}`;
+        window.location = `/categorias/edit/${id} `;
     }
 
 </script>

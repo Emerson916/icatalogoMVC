@@ -1,5 +1,5 @@
 {
-    "name": "emerson/icatalogo_MVC",
+    "name": "/Emerson/icatalogoMVC",
     "require": {},
     "autoload": {
         "psr-4": {
